@@ -48,16 +48,6 @@
             color: #333;
             font-weight: bold;
         }
-
-#imagemFrase {
-    max-width: 300px;
-    margin-top: 20px;
-    display: block;       /* torna a imagem um bloco para aplicar margin auto */
-    margin-left: auto;    /* centraliza horizontalmente */
-    margin-right: auto;   /* centraliza horizontalmente */
-    border-radius: 10px;
-}
-        
     </style>
 </head>
 <body>
@@ -66,7 +56,6 @@
     <img src="logo.png" alt="Logo Newspring" class="logo">
     <button onclick="mostrarFrase()">Modo: Ativar Newspringueiros!</button>
     <p id="frase"></p>
-    
 </div>
 
 <script>
@@ -74,11 +63,6 @@ function mostrarFrase() {
     // Define a frase
     document.getElementById("frase").innerText =
     "Se a Segunda te mandar abaixo… aproveita para fazer agachamentos! 🤸‍♂️😂";
-
-    // Mostra a imagem correspondente
-    const img = document.getElementById("imagemFrase");
-    img.src = "flork.png"; // substitui pelo caminho da tua imagem
-    img.style.display = "block";
 }
 </script>
 
