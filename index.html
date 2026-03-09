@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Frase Engraçada</title>
     <style>
         body {
             margin: 0;
@@ -20,8 +20,8 @@
 
         /* Logo em cima */
         .logo {
-            max-width: 200px; /* ajuste conforme necessário */
-            margin-bottom: 30px; /* espaço entre logo e botão */
+            max-width: 200px;
+            margin-bottom: 30px;
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -33,7 +33,7 @@
             cursor: pointer;
             border-radius: 10px;
             border: none;
-            background-color: #4CAF50; /* verde da empresa */
+            background-color: #4CAF50;
             color: white;
             transition: transform 0.2s;
         }
@@ -44,9 +44,16 @@
 
         #frase {
             margin-top: 25px;
-            font-size: 32px; /* tamanho maior da letra */
+            font-size: 32px;
             color: #333;
             font-weight: bold;
+        }
+
+        #imagemFrase {
+            max-width: 300px;
+            margin-top: 20px;
+            display: none;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -56,12 +63,19 @@
     <img src="logo.png" alt="Logo Newspring" class="logo">
     <button onclick="mostrarFrase()">Modo: Ativar Newspringueiros!</button>
     <p id="frase"></p>
+    <img id="imagemFrase" src="" alt="Imagem engraçada">
 </div>
 
 <script>
 function mostrarFrase() {
+    // Define a frase
     document.getElementById("frase").innerText =
     "Se a Segunda te mandar abaixo… aproveita para fazer agachamentos! 🤸‍♂️😂";
+
+    // Mostra a imagem correspondente
+    const img = document.getElementById("imagemFrase");
+    img.src = "flork.png"; // substitui pelo caminho da tua imagem
+    img.style.display = "block";
 }
 </script>
 
